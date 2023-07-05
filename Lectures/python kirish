@@ -1,0 +1,87 @@
+			Compiler and interpreter
+Dasturchi tomondan yozilgan kodni mashina koe(object code)ga tarjima qilib beradigan dasturiy mahsulotga compilyator deyiadi.
+
+Kompilyator berilgsn kodni to'liqligicha o'qib chiqadi, agar dasturda qanaqadir xatolik mavjud bo'lsa, barcha xaloliklar dasturchiga qaytariladi
+
+Kompilyatorga misol sifatida: c++,Jav,C dasturlash tillarini keltirsak bo'ladi.
+
+Kompilyaatsiya natijasida dasturning .exe formatli ilovasi hosil bo'ladi,keyinchalik foyadalanuvchi dasturni kompilyatsiya qilmasdan shu .exe fayl yoradmida ishga tushurishi mumki.
+
+Interpretator yozilgan codeni mashina codiga o'girishdan oldin har bir belgini o'zining maxsus belgilari bilan belgilab oldi.Kompliyatorga nisbatan farqli tomonlari:
+
+1.Interpretator yozilgan codeni satrma-satr o'qiydi har bir satr bo'yicha natijani chiqarib beradi.
+M: agar yozilgan code(7 qator) da 3 - qatorda xatolik mavjud bo'lsa shu joyda dastur to'xtaydi.Lekin ushbu xatolikkacha bo'lgan qatorlar natijasini chiqarib beradi.			
+
+2.Qatorma-qator o'qiganlini hisobiga dasturni ishga tushurishga ko'p vaqt talab etiladi.
+
+3.Har bir qatorni o'qigani hisobiga compilyatorga nisbatan interpretator sekin
+
+
+
+
+
+
+
+
+type - obyektni ma'lumot tipini aniqlash uchun ishlatiladi.
+python dasturlash tilida bo'lish amali:
+1.'a/b'- a ni b ga bo'lgandagi natijani haqiqiy son sifatida qaytaradi.M:4/5=0.8
+2.'a//b' - a ni b ga bo'lgandagi natijani butun son sifatida qaytaradi.M:16//5=3
+3.Python daturlash tilida darajaga oshirish:
+3.1 Ildiz olish a**(1/2)  a sonida ildiz olish uchun;
+3.2 Darajaga oshirish  a**b=a^b
+
+Pythonda ma'lumotni ekranga chop etish uchun print funksiyasidan foydalaniladi,:
+Print funksiyasining strukturasi:
+	print(end="\n",sep=" ")
+yuqorida end - ma'lumotni chop qilgandan keyingi qatorga tushish uchun (uni o'zgartirish mumkin):
+M: print("Salom",end="\t")
+   print("Bitiruvchilar")
+Result: 
+	"Salom Bitiruvchilar"
+2. sep - printda chiqarilayotgan qiymatlarni ajratib turish uchun funksiya, bunda datslabki qiymat probelni o'zgartirish mumkin.
+
+Bundan tashqari ma'lumotni chiqarish 2 xil formatdan foydalanish mumkin:
+1. print(f"Satr {dastlabki obyekt}- {keyingi obyekt}")
+M: a=25
+   b=5
+   printf(f"Bugungi sana {a}.{b}.2023")
+Result:
+   "Bugungi sana 25.5.2023"
+2.printf("Satr {0}-{1}-{2}".format(a,b,c))
+M:kun=25
+  oy=5
+  yil=2023
+  print("Bugungi sana {1}.{2}.{0}".format(yil,kun,oy))
+Result: Bugungi sana 25.05.2023
+print("Bugungi sana {1:02d}.{2:02d}.{0:02d}".foramt(yil,kun,oy))
+Reslut: Bugungi sana 25.05.2023
+
+a[pzn:] - a satrni pozition elementidan oxirigacha chiqarish
+a[pzn::count] - a satrni pzn pozitiondan boshlab har count qadam bilan chiqarish
+a[start,finish,step]- startdan boshlab toki finishgacha step qadam bilan yurish
+
+input - ma'lumotni consoledan kiritish uchun ishlatiladi.Agar ma.lumot tipi oldindan berilmasa har qanday o'qigan qiymatni "str" deb qabul qiladi:
+M: s=input("Qiymatni kiriting: ")
+
+Agar consoledan kiritilayotgan qiynatni qaysidir ma'lumot tipida qabul qilinishini xoxlasak u holatda biz ma'lumot tipini input funksiyasidan oldin berishimiz lozim:
+
+M: a=int(input("Sonni kiriting: ")) 
+   f=int(input("Haqiqiy sonni kiriting: ")) 
+   z=int(input("Mantiqiy qiymatni kiriting: ")) 
+   
+Python dastrulash tilida 2 xil ma'lumot tipi bor:
+1.Primative
+2.None primative
+
+1.Primative - odatiy ma'lumot tiplariga int,float,str va bool kiriadi.
+
+2.None primative - noodatiy ma'lumot tiplariga list,set,dictionary,tuple kiradi.
+
+Consoledan bir nechta qiymat kiritilayotgan bo'lsa o'zgaruvchilarga o'zlashtirish uchun  map va split funksiyalridan fi=oydalaniladi.'M; kun,oy=map(int,jnput(Bugungi sanani kirit: ").split())
+
+Split funksiyasi kiritilgan qiymatlarni ajratib olish uchun ishlatiladi default holatda " "(probel)ga nisbatan ajratib beradi.
+
+# bitta qatro uchun izoh
+''' bir nechta qator izoh '''
+""" bir nechta qator izoh """

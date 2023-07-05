@@ -1,0 +1,43 @@
+ 							List va tuple 
+List - tartiblangan elementlardan tashkil topgan massiv hisoblanadi.Massivdan farqi listda element turlari turli xil ma'lumot toifasiga ega bo'lishi mumkin.Listning qiymatlari o'zgaruvchan bo'ladi,ya'ni listni o'zgartirish mumkin.
+
+Listni e'lon qilish uchun ([]) qavsdan yoki list() sinfidan foydalansih mumkin
+
+List tuplega nisbatan sekin ishlaydi.Listda index nol(0)dan boshlanadi.
+
+Listning quyidagi funksiyalari mavjud:
+
+ls=["Uzbekisatan","Turkey","Vatikan","Italy"]
+
+copy()- List elementlarini boshqa bir lisatga nusxalash uchun ishlatiladi.
+
+clear() - list elementlarini tozlaydi.
+
+append()- Listga element qo'shish uchun ishlatiladi.Listning oxiriga element qo'shadi.
+
+insert(pzn,item) - itemni ko'rsatilgan pznga qo'shadi. 
+
+remove(x) - Listning x ga teng bo'lgan elementlarini o'chiradi.
+
+pop(pzn) - Listning pzn o'rnida turgan elementni o'chiradi va shu qiymatni qaytaradi.Agar hech qanday indexni bermasak u holatda listning oxiriga elementini o'chirib yuboradi.
+
+index(x) - Berilgan diapazon elementlari orasidan x ga teng bo'lgan birinchi elmentning indexni qaytaradi.
+
+extend() - Listning elementlariga boshqa bir listning elementlarini qo'shish uchun ishlatiladi.
+
+sort()   - List elementlarini o'sib borish tartibida tartiblab beradi.(Timsort algoritmodan foydalanga holatda)
+
+reverse() - list elementlarini teskari ko'rinishda qaytaradi.
+
+count() - list elementlari orasida x elementni uchrashlar sonini(necha marta qatnashganini) qaytaradi.Agar qatnashmagan  bo'lsa nol(0) qaytaradi. 
+
+					Tuple
+Tuple() - static data struktura hisoblanadi.
+1.Immutable(o'zgarmas) ma'lumot tipi hisoblanadi
+2.Xotiradan kam joy oladi.(Listga nisbatan).
+3.Listga nisbatan iteratsiya tez amalaga oshirladi ya'ni list bilan solishtirganda tezroq ishlaydi 
+
+index() - berilgan elementni tupleda turgan position(index)ni qaytaradi.
+
+count() -  x qiymatning tupleda uchrashlar sonini qaytaradi.
+Tupleni e'lon qilsih uchun () qaysdan yoki tuple() classdan obyect olinadi.
